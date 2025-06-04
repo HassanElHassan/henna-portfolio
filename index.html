@@ -1,102 +1,127 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ferdaous Henna</title>
+  <title>Henna door Ferdaous</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 20px;
+      margin: 0;
       background: #fff8f0;
-      color: #5a3e1b;
+      color: #333;
     }
+
     header {
       background-color: #a0522d;
       color: white;
       padding: 2rem;
       text-align: center;
     }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.2em;
+
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
     }
+
     h2 {
       color: #a0522d;
-      margin-bottom: 10px;
     }
-    #gallery {
-      margin: 20px 0;
-    }
-    .gallery-scroll {
+
+    .gallery {
       display: flex;
-      overflow-x: auto;
       gap: 1rem;
       padding-bottom: 1rem;
+      max-width: calc((200px * 4) + (1rem * 3));
+      overflow-x: auto;
+      margin: 0 auto;
+      white-space: nowrap;
+      /* prevent wrapping */
     }
-    .gallery-scroll::-webkit-scrollbar {
-      height: 8px;
-    }
-    .gallery-scroll::-webkit-scrollbar-thumb {
-      background-color: #a0522d;
-      border-radius: 4px;
-    }
-    .gallery-scroll img {
+
+    .gallery img {
       flex: 0 0 auto;
+      /* don't shrink or grow */
       width: 200px;
       height: auto;
       border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      display: inline-block;
+      /* ensure inline for nowrap */
     }
-    section p {
-      max-width: 600px;
-      margin: 0 auto 20px auto;
-      font-size: 1.1rem;
+
+    .gallery::-webkit-scrollbar {
+      height: 8px;
     }
+
+    .gallery::-webkit-scrollbar-thumb {
+      background-color: #a0522d;
+      border-radius: 4px;
+    }
+
     footer {
       background-color: #a0522d;
       color: white;
       text-align: center;
       padding: 1rem;
     }
+
+    @media (max-width: 600px) {
+      section {
+        padding: 1rem;
+      }
+
+      .gallery img {
+        width: 150px;
+      }
+
+      .gallery {
+        max-width: calc((150px * 4) + (1rem * 3));
+      }
+    }
   </style>
 </head>
+
 <body>
 
-<header>
-  <h1>Henna door Ferdaous</h1>
-  <p>Kunst op de huid, met liefde gezet</p>
-</header>
+  <header>
+    <h1>Henna door Ferdaous</h1>
+    <p>Kunst op de huid, met liefde gezet</p>
+  </header>
 
-<section id="about">
-  <h2>Over Ferdaous</h2>
-  <p>Ferdaous houdt van tekenen en is hier erg goed in. Zo is ze ook begonnen met henna: tekenen, maar dan op de huid. Ze maakt unieke ontwerpen met de hand, voor feestjes, bruiloften of gewoon omdat het mooi is!</p>
-</section>
+  <section id="about">
+    <h2>Over Ferdaous</h2>
+    <p>Ferdaous houdt van tekenen en is hier erg goed in. Zo is ze ook begonnen met henna: tekenen, maar dan op de huid
+      – vooral op de handen. Ze maakt unieke ontwerpen met de hand, voor feestjes, bruiloften of gewoon omdat het mooi
+      is!</p>
+  </section>
 
-<section id="gallery">
-  <h2>Eigen Henna Ontwerpen</h2>
-  <p>Hier zie je een selectie van haar zelfgemaakte henna ontwerpen.</p>
-  <div class="gallery-scroll">
-    <img src="henna1.jpg" alt="Henna ontwerp 1" />
-    <img src="henna2.jpg" alt="Henna ontwerp 2" />
-    <img src="henna3.jpg" alt="Henna ontwerp 3" />
-    <img src="henna4.jpg" alt="Henna ontwerp 4" />
-	<img src="henna5.jpg" alt="Henna ontwerp 5" />
-    <img src="henna6.jpg" alt="Henna ontwerp 6" />
-	<img src="henna7.jpg" alt="Henna ontwerp 7" />
-    <!-- Voeg hier meer afbeeldingen toe -->
-  </div>
-</section>
+  <section id="gallery">
+    <h2>Henna Galerie</h2>
+    <p>Hier zie je een selectie van haar zelfgemaakte henna ontwerpen.</p>
+    <div class="gallery">
+      <img src="henna1.jpg" alt="Henna ontwerp 1" />
+      <img src="henna2.jpg" alt="Henna ontwerp 2" />
+      <img src="henna3.jpg" alt="Henna ontwerp 3" />
+      <img src="henna4.jpg" alt="Henna ontwerp 4" />
+      <img src="henna5.jpg" alt="Henna ontwerp 5" />
+      <img src="henna6.jpg" alt="Henna ontwerp 6" />
+      <img src="henna7.jpg" alt="Henna ontwerp 7" />
+    </div>
+  </section>
 
-<section id="contact">
-  <h2>Contact</h2>
-  <p>📍 Locatie: Culemborg, Nederland</p>
-  <p>📞 Telefoon/Whatsapp: <a href="https://wa.me/316124578912">06 124578912</a></p>
-</section>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>📍 Locatie: Culemborg, Nederland</p>
+    <p>📞 Telefoon/Whatsapp: <a href="https://wa.me/316124578912">06 124578912</a></p>
+  </section>
 
-<footer>
-  <p>© 2025 Henna door Ferdaous</p>
-</footer>
+  <footer>
+    <p>© 2025 Henna door Ferdaous</p>
+  </footer>
 
 </body>
+
 </html>
