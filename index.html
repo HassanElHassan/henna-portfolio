@@ -1,51 +1,59 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Henna door Ferdaous</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ferdaous Henna</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 0;
+      margin: 20px;
       background: #fff8f0;
-      color: #333;
+      color: #5a3e1b;
     }
-    header {
-      background-color: #a0522d;
-      color: white;
-      padding: 2rem;
+    header, footer {
       text-align: center;
+      margin-bottom: 20px;
     }
-    section {
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.2em;
     }
     h2 {
       color: #a0522d;
+      margin-bottom: 10px;
     }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    #gallery {
+      margin: 20px 0;
+    }
+    .gallery-scroll {
+      display: flex;
+      overflow-x: auto;
       gap: 1rem;
+      padding-bottom: 1rem;
     }
-    .gallery img {
-      width: 100%;
+    .gallery-scroll::-webkit-scrollbar {
+      height: 8px;
+    }
+    .gallery-scroll::-webkit-scrollbar-thumb {
+      background-color: #a0522d;
+      border-radius: 4px;
+    }
+    .gallery-scroll img {
+      flex: 0 0 auto;
+      width: 200px;
       height: auto;
       border-radius: 10px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
-    footer {
-      background-color: #a0522d;
-      color: white;
-      text-align: center;
-      padding: 1rem;
+    section p {
+      max-width: 600px;
+      margin: 0 auto 20px auto;
+      font-size: 1.1rem;
     }
-    @media (max-width: 600px) {
-      section {
-        padding: 1rem;
-      }
+    footer {
+      font-size: 0.9rem;
+      color: #8b6b40;
     }
   </style>
 </head>
@@ -58,15 +66,21 @@
 
 <section id="about">
   <h2>Over Ferdaous</h2>
-  <p>Ferdaous houdt van tekenen en is hier erg goed in. Zo is ze ook begonnen met henna: tekenen, maar dan op de huid – vooral op de handen. Ze maakt unieke ontwerpen met de hand, voor feestjes, bruiloften of gewoon omdat het mooi is!</p>
+  <p>Ferdaous houdt van tekenen en is hier erg goed in. Zo is ze ook begonnen met henna: tekenen, maar dan op de huid. Ze maakt unieke ontwerpen met de hand, voor feestjes, bruiloften of gewoon omdat het mooi is!</p>
 </section>
 
 <section id="gallery">
-  <h2>Henna Galerie</h2>
-  <div class="gallery">
-    <img src="henna1.jpg" alt="Henna ontwerp 1">
-    <img src="henna2.jpg" alt="Henna ontwerp 2">
-    <img src="henna3.jpg" alt="Henna ontwerp 3">
+  <h2>Ferdaous' Eigen Henna Ontwerpen</h2>
+  <p>Hier zie je een selectie van haar zelfgemaakte henna ontwerpen.</p>
+  <div class="gallery-scroll">
+    <img src="henna1.jpg" alt="Henna ontwerp 1" />
+    <img src="henna2.jpg" alt="Henna ontwerp 2" />
+    <img src="henna3.jpg" alt="Henna ontwerp 3" />
+    <img src="henna4.jpg" alt="Henna ontwerp 4" />
+	<img src="henna5.jpg" alt="Henna ontwerp 5" />
+    <img src="henna6.jpg" alt="Henna ontwerp 6" />
+	<img src="henna7.jpg" alt="Henna ontwerp 7" />
+    <!-- Voeg hier meer afbeeldingen toe -->
   </div>
 </section>
 
